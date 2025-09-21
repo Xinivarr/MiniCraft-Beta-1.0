@@ -12,7 +12,8 @@ SRCS := \
 	fuctions/ui.cpp \
 	fuctions/game.cpp \
 	fuctions/actions/mine.cpp \
-	fuctions/actions/arena.cpp
+	fuctions/actions/arena.cpp \
+	fuctions/actions/village.cpp
 
 # Single output directory for object files (keeps subdirs under it)
 OBJDIR := build/obj

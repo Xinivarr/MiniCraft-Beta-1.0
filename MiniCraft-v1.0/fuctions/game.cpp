@@ -8,6 +8,7 @@
 #include "inventory.h"
 #include "actions/mine.h"
 #include "actions/arena.h"
+#include "actions/village.h"
 
 using namespace std;
 
@@ -65,10 +66,14 @@ void runGame(Player &player, bool &hasSave)
             waitEnter();
             break;
         case 3:
-            player.location = "Koy";
-            cout << "\nKoye gittiniz! ";
-            waitEnter();
+        {
+            bool cont = runVillage(player);
+            if (!cont)
+            {
+                gameRunning = false;
+            }
             break;
+        }
         case 5:
             displayInventory(player);
             waitEnter();
