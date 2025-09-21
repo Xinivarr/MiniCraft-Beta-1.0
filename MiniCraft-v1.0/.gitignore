@@ -1,0 +1,38 @@
+# Build directories
+/build/
+
+# Object and dependency files
+*.o
+*.lo
+*.la
+*.d
+
+# Libraries
+*.a
+*.so
+*.dylib
+*.dll
+
+# Executables
+/MiniCraft
+*.exe
+*.out
+
+# Coverage files
+*.gcno
+*.gcda
+*.gcov
+
+# OS junk
+.DS_Store
+
+# Editor/IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Swap/backup
+*~
+*.swp
+\# Game save files
+/save.txt
